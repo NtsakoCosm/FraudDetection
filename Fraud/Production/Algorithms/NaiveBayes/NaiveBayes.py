@@ -1,11 +1,7 @@
-import pandas as pd
-import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.model_selection import train_test_split
 import streamlit as st
 from PIL import Image
-from sklearn.metrics import roc_auc_score,roc_curve,precision_recall_curve,average_precision_score
-
+'''
 fraud_df = pd.read_csv('creditcard.csv')
 feautures = fraud_df.drop('Class', axis=1)
 
@@ -28,7 +24,7 @@ negative_means = train[train['Class'] == 0].mean(axis=0).drop('Class')
 
 postive_std = train[train['Class'] == 1].std(axis=0).drop('Class')
 negative_std = train[train['Class'] == 0].std(axis=0).drop('Class')
-
+'''
 
 
 def GaussianNB(sigma,mean,X):
