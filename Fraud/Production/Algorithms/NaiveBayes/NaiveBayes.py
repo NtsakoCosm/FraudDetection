@@ -33,7 +33,7 @@ def GaussianNB(sigma,mean,X):
         prob = (1/(np.sqrt(2*np.pi*item)) )*np.exp(-((X[i]-mean[i])**2/(2*item)))
         classprob.append(prob)
     return sum(classprob)
-
+'''
 tp = 0
 fp = 0
 fn = 0
@@ -54,7 +54,7 @@ for i,instance in x_test.iterrows():
         tn+=1
     if y_test[i] == 0 and guess == 1:
         fp+=1
-
+'''
 def Gauss():
     st.header('Gaussian Naive Bayes')
     gauss ='''
