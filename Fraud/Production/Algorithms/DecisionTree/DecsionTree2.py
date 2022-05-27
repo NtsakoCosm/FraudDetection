@@ -237,7 +237,7 @@ print(trailrightnode)
     
     st.subheader('Model: ')
     st.write('This is the sklearn model visual outpur: ')
-    dtfig = Image.open('Production/Algorithms/DecisionTree/Dt.png')
+    dtfig = Image.open('Fraud/Production/Algorithms/DecisionTree/Dt.png')
     st.image(dtfig)
     st.subheader('Decision Tree Metrics: ')
     st.subheader('1.Precision recall curve: ')
