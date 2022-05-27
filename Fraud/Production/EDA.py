@@ -4,7 +4,7 @@ from PIL import Image
 
 
 def Eda():
-    pair = Image.open('Fraud/Production\pairplot.png')
+    pair = Image.open('Fraud/Production/pairplot.png')
     st.header('Exporatory Data Analysis')
     st.image(Image.open('Fraud/head.png'))
     st.subheader('Multivarient Analysis')
