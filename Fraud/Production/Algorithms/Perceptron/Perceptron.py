@@ -115,10 +115,8 @@ predicted = np.array(predicted)
     st.code(percep)
     st.subheader('Perceptron metrics')
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/pre_rec.png'))
-
-    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/perceptron_auc.png'))
-    
-    
-    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronroc.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/auprc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronroc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/perceptron_auc.png'))
+   
     
