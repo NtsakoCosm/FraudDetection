@@ -8,7 +8,7 @@ from PIL import Image
 
 def FeatureSelection():
     st.header('Feature Selection Phase')
-    image = Image.open('Production\point-biserial-correlation.png')
+    image = Image.open('Fraud/Production/point-biserial-correlation.png')
     synopsis = '''
     Feature Selection involves using metrics to decide 
     which features have the most amount of infomation
@@ -26,7 +26,7 @@ def FeatureSelection():
         high cost but low benefit.
     '''
     st.write(synopsis)
-    st.image(Image.open('Production/FeatureSelection/frame.png'))
+    st.image(Image.open('Fraud/Production/FeatureSelection/frame.png'))
     st.header("Techniques:")
     #1
     st.subheader('1. Point biserial correlation')
@@ -69,7 +69,7 @@ def FeatureSelection():
 '''
     st.code(pbc)
     st.write('Note, i have taken the absoulute value of the coefficients, making it easier to sort through the data.')
-    st.image(Image.open('Production/FeatureSelection/pbcoe.png'))
+    st.image(Image.open('Fraud/Production/FeatureSelection/pbcoe.png'))
     st.write('As we can see we have selected a k, and we can list out the best correlation scored features from our statistical test.')
 
     st.header('2.Infomation Gain(Entropy) ')
@@ -77,7 +77,7 @@ def FeatureSelection():
     st.write('What is the entropy in general?, What is the entropy after we split the target variable based on a feature, then we as how much entropy did we lose?, the higher the infomation gain the more valuable the feature')
 
          
-    st.image(Image.open('Production/FeatureSelection/infogain.png'))
+    st.image(Image.open('Fraud/Production/FeatureSelection/infogain.png'))
 
     st.subheader('The 2 metrics both did a similar job in indentifying infomation dense features. The only deviation would be: V7 and V9, we can add either one to the other and end up with 11 features')
 
