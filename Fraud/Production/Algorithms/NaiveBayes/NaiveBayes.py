@@ -155,3 +155,6 @@ for i,instance in x_test.iterrows():
     
     st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/prcurve.png'))
     st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/auprc.png'))
+    st.write(''' Naive Bayes is showing the same issues losgitic regression had , but not as horribly. 
+                 It has a good AUROC score but , a bad AUPRC.
+    ''')
