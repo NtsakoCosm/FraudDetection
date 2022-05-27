@@ -133,7 +133,7 @@ predicted = np.array(predicted)
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronrocthres.png'))
     st.write('''These different thresolds show that 
     the higher you want your true postive rate past 0.8,
-    the more false positives you're going to get(Sacrifice, P/R tradeoff).''')
+    the more false positives you're going to accumulate(Sacrifice.''')
     
    
     
