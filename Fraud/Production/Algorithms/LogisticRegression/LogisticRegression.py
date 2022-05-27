@@ -49,7 +49,7 @@ Logistic Regression is a binary classification algorithm. For logistic regressio
     This then helps us measure how good our model is. 
     If entropy is seen as uncertainty then we can look at the binary cross entropy loss as a way to measure how certain our model is when it is performing predictions. '''
     st.write(log)
-    st.image(Image.open('Production/Algorithms/LogisticRegression/log.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/log.png'))
     sigmoid = '''
 The Logistic Regression formula that we use to create a update rule is the one above. 
     We use this formula with gradient descent. Updating the betas is done by setting your betas to zero, plugging in an instance of the data, calculate the prediction, then the error that comes from the cost function is then multiplied by the learning rate , the weights are updated by multiplying the product of the learning rate and the cost function , to the instance itself.
@@ -58,7 +58,7 @@ The Logistic Regression formula that we use to create a update rule is the one a
     b = b + alpha * (y - prediction) * prediction * (1 - prediction) x
     '''
     st.write(sigmoid)
-    st.image(Image.open('Production/Algorithms/LogisticRegression/log2.jpg'))
+    st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/log2.jpg'))
     st.subheader('Logistic Regression from scratch: ')
     st.code('''
     import pandas as pd
@@ -115,13 +115,13 @@ logistic_regression(x_train,y_train,x_test,y_test)
 predicted = np.array(predicted_classes)
     ''')
     st.subheader('1. Logistic Regression Metrics:')
-    st.image(Image.open('Production/Algorithms/LogisticRegression/logisticroc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/logisticroc.png'))
     
     
-    st.image(Image.open('Production/Algorithms/LogisticRegression/roclog.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/roclog.png'))
     
-    st.image(Image.open('Production/Algorithms/LogisticRegression/logisticprerec.png'))
-    st.image(Image.open('Production/Algorithms/LogisticRegression/auprc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/logisticprerec.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/auprc.png'))
 
     st.write('As we can see, logistic regression had a horrible AUPRC score, and when i researched this, it was found that Logistic regression has alot of problems seperating out a dataset that is non linearly seperable.')
     st.write('This also shows how important it is to have different metrics based on different contexts , because if you think about it Logistic Regression had the best AUC score , but the worst AUPRC score, and the AUPRC score is used when a dataset is imbalanced.')
