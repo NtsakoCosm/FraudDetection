@@ -130,7 +130,7 @@ predicted = np.array(predicted)
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/auprc.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronroc.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/perceptron_auc.png'))
-    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronrocthres.png')
+    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronrocthres.png'))
     st.write('''These different thresolds show that 
     if you want to consistently get a true postive rate passed 0.8
     , you will then start sacrificing ,
