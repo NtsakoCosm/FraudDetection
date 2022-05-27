@@ -11,7 +11,7 @@ def DecisionTrees():
     st.write(dt)
     st.subheader('The Math :')
     st.subheader('1. Gini Entropy')
-    gini_entropy = Image.open('Production/Algorithms/DecisionTree/gini_and_entropy.png')
+    gini_entropy = Image.open('Fraud/Production/Algorithms/DecisionTree/gini_and_entropy.png')
     gini_exp = '''
     The ways in which one can measure the uncertainty/ information are multiple, but very smiliar , so we'll list them out and pick the most concise one.
 
@@ -19,7 +19,7 @@ def DecisionTrees():
     '''
     st.write(gini_exp)
     st.image(gini_entropy)
-    gini_pure = Image.open('Production/Algorithms/DecisionTree/Gini_pure.png')
+    gini_pure = Image.open('Fraud/Production/Algorithms/DecisionTree/Gini_pure.png')
     st.image(gini_pure,caption='The widely used formula for the gini entropy ')
     st.subheader('What do all these equations mean?')
     st.write('The gini is just one aspect needed for a Decision Tree')
@@ -241,8 +241,8 @@ print(trailrightnode)
     st.image(dtfig)
     st.subheader('Decision Tree Metrics: ')
     st.subheader('1.Precision recall curve: ')
-    st.image(Image.open('Production/Algorithms/DecisionTree/pre_rec.png'))
-    st.image(Image.open('Production/Algorithms/DecisionTree/aupr.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/DecisionTree/pre_rec.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/DecisionTree/aupr.png'))
     st.write('This visualizes the precision and recall trade off,where the higher the recall ,the lower the precision and visa vera, and in this model we are focued on the recall score.')
     st.write('The reason, by the way, we use AUPRC(Area under precision and recall curve, is because it performs well with unbalanced dataset such as the one i am using.')
     st.write('as we can see a decision tree is the best performing algorithm based on our AUPRC metric')
@@ -251,9 +251,9 @@ print(trailrightnode)
     
     
     
-    st.image('Production/Algorithms/DecisionTree/rocsocore.png')
+    st.image('Fraud/Production/Algorithms/DecisionTree/rocsocore.png')
     st.write('The area under the reciever operating characteristic curve.')
     st.write('This visually displays how a higher True positive rate is coupled with an increase in false postives. In an attempt to classify all true positives, we end up making a compromise because we have an imbalanced dataset, and we care more about the recall score and as such, a higher false postive rate isn\'t the worst thing in the world')
-    st.image(Image.open('Production/Algorithms/DecisionTree/auc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/DecisionTree/auc.png'))
     
 
