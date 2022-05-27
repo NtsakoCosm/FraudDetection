@@ -128,6 +128,10 @@ predicted = np.array(predicted)
                 ''')
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/pre_rec.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/auprc.png'))
+    st.write('''The AUPRC is a metric that we use when we have a imbalanced dataset
+                because the ROC and the AUROC can paint a overly optimistic picture of our model's 
+                performance. Instead we use AUPRC becasue it tells us how good it is,
+                given that our data is imbalanced''')
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronroc.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/perceptron_auc.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronrocthres.png'))
