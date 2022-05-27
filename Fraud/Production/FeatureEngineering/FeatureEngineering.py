@@ -41,10 +41,10 @@ def FeatureEngineering():
     
     
     st.warning('Unnormalized')
-    st.image(Image.open('Production/FeatureEngineering/unnormalized.png'))
+    st.image(Image.open('Fraud/Production/FeatureEngineering/unnormalized.png'))
     
     st.success('Normalized')
-    st.image(Image.open('Production/FeatureEngineering/normalized.png'))
+    st.image(Image.open('Fraud/Production/FeatureEngineering/normalized.png'))
     st.subheader('4.Scaling')
     scaling = '''
     We scale features as to make the computations lighter and have a consistent scale. 
@@ -62,7 +62,7 @@ def FeatureEngineering():
     st.image(standard)
 
     st.header('Before Standardization')
-    st.image(Image.open('Production/FeatureEngineering/beforestnd.png'))
+    st.image(Image.open('Fraud/Production/FeatureEngineering/beforestnd.png'))
     st.header('After Standardization')
     
-    st.image(Image.open('Production/FeatureEngineering/afterstnd.png'))
+    st.image(Image.open('Fraud/Production/FeatureEngineering/afterstnd.png'))
