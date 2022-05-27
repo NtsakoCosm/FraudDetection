@@ -49,7 +49,7 @@ def perceptron():
     if the output >= 0 the classification is positive, otherwise negative.
     This is called a step function(Activation function).
     ''')
-    imgmodel = Image.open('Production\Algorithms\Perceptron\percptron.png')
+    imgmodel = Image.open('Fraud/Production/Algorithms/Perceptron/percptron.png')
     st.image(imgmodel)
     st.write('The weights determine how much each feature impacts the class.')
     st.subheader('The Perceptron from sctratch: ')
@@ -113,11 +113,11 @@ predicted = np.array(predicted)
 
     '''
     st.code(percep)
-    st.image(Image.open('Production/Algorithms/Perceptron/pre_rec.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/pre_rec.png'))
 
-    st.image(Image.open('Production/Algorithms/Perceptron/perceptron_auc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/perceptron_auc.png'))
     
     
-    st.image(Image.open('Production/Algorithms/Perceptron/percpetronroc.png'))
-    st.image(Image.open('Production/Algorithms/Perceptron/auprc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronroc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/Perceptron/auprc.png'))
     
