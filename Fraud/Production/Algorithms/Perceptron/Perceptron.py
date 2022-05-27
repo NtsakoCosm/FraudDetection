@@ -114,6 +114,18 @@ predicted = np.array(predicted)
     '''
     st.code(percep)
     st.subheader('Perceptron metrics')
+    st.write('''These 2 graph are a measure of how good the algorithm is 
+                based on 2 variables(precision/recall(AUPRC) or true positive/false postive(AUROC)) 
+                with a very low sacrifice of the other variable. For example if you would want 
+                a good recall score, you would be willing to sacrifice precision but you would want 
+                the performance of the algorithm to already have a good recall score without 
+                sacrificing precision drastically.
+                if we get a correlated graph(when one increases, so does the other) this tells us
+                that our algorithm can't do a good job without sacrificing alot, this is bad.
+                On the flip side you would want a graph that is consistantly rising when the other is zero, 
+                this tells us the algorithm can give us a good score on the variable we want to 
+                measure without sacrificing the other
+                ''')
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/pre_rec.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/auprc.png'))
     st.image(Image.open('Fraud/Production/Algorithms/Perceptron/percpetronroc.png'))
