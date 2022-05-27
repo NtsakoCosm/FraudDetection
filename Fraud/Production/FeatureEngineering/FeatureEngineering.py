@@ -29,7 +29,7 @@ def FeatureEngineering():
     '''
     st.write('The "Outliers" here are the natural part of the actual population, so it would be bad practice to remove because above and beyond we might just have a model that is over fit ')
     st.write(outliers)
-    outlierpic = Image.open('Production\Outliers.png')
+    outlierpic = Image.open('Fraud/Production/Outliers.png')
     st.image(outlierpic,caption='The plot used the 2 most correlated features, to illustrate outliers visually. The assumption here is that a line can be seen spliting the 2 classes ')
 
     
