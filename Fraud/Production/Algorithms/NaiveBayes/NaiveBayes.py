@@ -64,9 +64,9 @@ def Gauss():
     '''
     st.write('')
     st.subheader('Categorical: ')
-    st.image(Image.open('Production/Algorithms/NaiveBayes/nb.jpeg'))
+    st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/nb.jpeg'))
     st.subheader('Continuous')
-    st.image(Image.open('Production/Algorithms/NaiveBayes/gnb.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/gnb.png'))
     st.write('Since all my features of the dataset are Continuous, i will be spending all the time on Gaussian Naive Bayes.')
     gnb = '''
 The first time gaussian naive clicked in my head was when i ignored the usual Naive bayes(categorical) 
@@ -150,8 +150,8 @@ for i,instance in x_test.iterrows():
 
     ''')
     
-    st.image(Image.open('Production/Algorithms/NaiveBayes/rocnb.png'))
-    st.image(Image.open('Production/Algorithms/NaiveBayes/rocsore.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/rocnb.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/rocsore.png'))
     
-    st.image(Image.open('Production/Algorithms/NaiveBayes/prcurve.png'))
-    st.image(Image.open('Production/Algorithms/NaiveBayes/auprc.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/prcurve.png'))
+    st.image(Image.open('Fraud/Production/Algorithms/NaiveBayes/auprc.png'))
