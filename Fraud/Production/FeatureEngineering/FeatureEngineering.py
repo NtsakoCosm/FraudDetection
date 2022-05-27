@@ -53,12 +53,12 @@ def FeatureEngineering():
     st.subheader('1.Normalization:')
     
     st.write('We make the value range 0-1, keep the distribution, but this enhances outliers, and as we stated, outliers in this project will be pivotal')
-    norm = Image.open('Production/FeatureEngineering/normalization.png')
+    norm = Image.open('Fraud/Production/FeatureEngineering/normalization.png')
     st.image(norm)
 
     st.subheader('2.Standardization:')
     st.write('This form of scaling , takes into account standard deviation, and will keep ouliers\' effect reduced. The mean is 0 and varience is 1, all the data points are subtracted by their mean and the output divided by the variance')
-    standard = Image.open('Production/FeatureEngineering/standardization.png')
+    standard = Image.open('Fraud/Production/FeatureEngineering/standardization.png')
     st.image(standard)
 
     st.header('Before Standardization')
