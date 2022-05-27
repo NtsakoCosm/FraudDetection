@@ -4,9 +4,9 @@ from PIL import Image
 
 
 def Eda():
-    pair = Image.open('Production\pairplot.png')
+    pair = Image.open('Fraud/Production\pairplot.png')
     st.header('Exporatory Data Analysis')
-    st.image(Image.open('head.png'))
+    st.image(Image.open('Fraud/head.png'))
     st.subheader('Multivarient Analysis')
     eda_desc = '''
     This is the part of the cycle where patterns are displayed as to 
@@ -36,7 +36,7 @@ def Eda():
     '''
     st.write(patterns)
     st.subheader('Visualizing the top 3 variables and infering models:')
-    pair = Image.open('Production\pairplot3.png')
+    pair = Image.open('Fraud/Production/pairplot3.png')
     st.image(pair)
     st.subheader('More Analysis')
     st.write('This is a good time to remember our objective for this model, we want a model that will value recall over precision. This just means we don\'t mind false positives , as long as we are not misclassifying  true positives as false negative.')
