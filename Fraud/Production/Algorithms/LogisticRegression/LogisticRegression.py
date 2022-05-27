@@ -123,7 +123,7 @@ predicted = np.array(predicted_classes)
     st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/logisticprerec.png'))
     st.image(Image.open('Fraud/Production/Algorithms/LogisticRegression/auprc.png'))
 
-    st.write('As we can see, logistic regression had a horrible AUPRC score, and when i researched this, it was found that Logistic regression has alot of problems seperating out a dataset that is non linearly seperable.')
-    st.write('This also shows how important it is to have different metrics based on different contexts , because if you think about it Logistic Regression had the best AUC score , but the worst AUPRC score, and the AUPRC score is used when a dataset is imbalanced.')
+    st.write('As we can see, logistic regression had a horrible AUPRC score,this tells me that logistic regression can only perform well only when it loses percision(since we are concerned with the recall score.')
+    st.write('This also shows how important it is to have different metrics based on different contexts , because if you think about it Logistic Regression had the best AUC score , but the worst AUPRC score.')
     
 
